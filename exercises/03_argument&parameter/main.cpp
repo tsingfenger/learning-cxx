@@ -7,20 +7,20 @@ void func(int);
 
 // TODO: 为下列 ASSERT 填写正确的值
 int main(int argc, char **argv) {
-    auto arg = 99;
-    ASSERT(arg == ?, "arg should be ?");
-    std::cout << "befor func call: " << arg << std::endl;
+    auto arg = 90;
+    ASSERT(arg == 90, "arg should be 90");
+    std::cout << "before func call: " << arg << std::endl;
     func(arg);
-    ASSERT(arg == ?, "arg should be ?");
+    ASSERT(arg == 90, "arg should be 90");
     std::cout << "after func call: " << arg << std::endl;
     return 0;
 }
 
 // TODO: 为下列 ASSERT 填写正确的值
 void func(int param) {
-    ASSERT(param == ?, "param should be ?");
-    std::cout << "befor add: " << param << std::endl;
+    ASSERT(param == 90, "param should be 90");
+    std::cout << "before add: " << param << std::endl;
     param += 1;
-    ASSERT(param == ?, "param should be ?");
+    ASSERT(param == 91, "param should be 91");
     std::cout << "after add: " << param << std::endl;
 }
